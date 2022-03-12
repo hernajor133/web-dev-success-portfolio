@@ -1,12 +1,14 @@
-// const myBtn = document.getElementById("myBtn");
-// const myBtnTwo = document.getElementById("myBtnTwo")
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// myBtn.addEventListener("click", function(e) {
-//     console.log("The Button Was Clicked")
-// });
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
 
-
-// myBtnTwo.addEventListener("click", function(e) {
-//     console.log("The Button Was Clicked")
-// });
+document.querySelectorAll(".nav-link").forEach(n => n.
+addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
