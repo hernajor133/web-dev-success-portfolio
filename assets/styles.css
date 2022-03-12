@@ -1,19 +1,143 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #5f5f5f;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font: size 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: white
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:991px){
+    .hamburger{
+        display: block
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        opacity: 0;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 2em;
 }
 
 ::-webkit-scrollbar-track {
-    background: hsl(120 75% 50% / 1);
+    background: transparent;
+    border-radius:100vw;
+    margin-block: .5em;
+    
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(120 100% 20% / 1);
+    background: rgb(58, 61, 58);
+    border-radius:100vw
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(120 100% 10% / 1);
+    background: rgb(30, 31, 30);
 }
 
+header {
+    padding-bottom: 150px
+}
+
+/* .img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+@media screen and (max-width:300px) {
+    .responsive {
+        padding: 0px 20px;
+        background-color: white;
+    }
+
+    .responsive img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:991px){
+    .hamburger {
+        background-color: transparent;
+        border: 0;
+        color: white;
+        cursor: 
+        font-size: 20px
+    }
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: 
+    font-size: 20px
+}
 
 .containerTwo {
     width: 100%;
