@@ -138,6 +138,17 @@ button{
     width: 100%;
 }
 
+.card-body {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nextBtn {
+    position: inherit;
+}
+
 #project{
     background-color: black;
     color: white;
