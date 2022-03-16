@@ -10,7 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./assets/styles.css" />
     <script src="https://kit.fontawesome.com/547e61be52.js" crossorigin="anonymous"></script>
@@ -56,7 +58,6 @@
                 <div class="card-body">
                   <h5 class="card-title">Jordi Hernandez</h5>
                   <p class="card-text">I grew up in Eastern WA. In my short two decades of life I've mastered a number of things. Such as farm work, elderly caregiving, phone repairs, auto repair, athletics, firefighting (structural and wildland). These previous occupations helped me develop experience in teamwork, problem solving, leadership, team project management. Thanks to the knowledge and experience gained from these occupations the door has opened to pursue a life long career as a web developer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
@@ -85,12 +86,16 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="width: d-block w-100;">
+                    <div class="card">
                       <img src="img/deja-brew-2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 id="carousel2" class="card-title">DejaBrew</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://lonewolfco.github.io/deja-brew/" class="btn btn-primary">Deployd Link</a>
+                        <p class="card-text">The Deja Brew application can be used to seach for breweries, with the search criteria of city entered.</p>
+                        <div class="btnCard">
+                          <a href="https://lonewolfco.github.io/deja-brew/" class="btn btn-primary">Deja Brew!</a>
+                          <a href="https://github.com/hernajor133" class="btn">GitHub!</a>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -99,8 +104,13 @@
                       <img src="img/Weather-Me-This-2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Weather Me This</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://hernajor133.github.io/weather-me-this/" class="btn btn-primary">Deployd Link</a>
+                        <p class="card-text">A weather dashboard with form inputs when a user searches for a city they are presented with current and future conditions for that city.</p>
+                        
+                        <div class="btnCard">
+                          <a href="https://hernajor133.github.io/weather-me-this/" class="btn btn-primary">Weather Me This!</a>
+                          <a href="https://github.com/hernajor133" class="btn">GitHub!</a>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -109,8 +119,12 @@
                       <img src="img/Get-Things-Done-2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Get Things Done</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="https://hernajor133.github.io/Get-Things-Done-Planner/"  class="btn btn-primary">Deployd Link</a>
+                        <p class="card-text">A daily planner that a user can use to schedule and plan their day by the hour.</p>
+                        <div class="btnCard">
+                          <a href="https://hernajor133.github.io/Get-Things-Done-Planner/"  class="btn">Get Things Done!</a>
+                          <a href="https://github.com/hernajor133" class="btn">GitHub!</a>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -148,34 +162,35 @@
                   <ol class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                       <div class="ms-2 me-auto">
-                        <div class="fw-bold">Phone</div>
-                        (509)-733-1795
+                        <div id="liheader" class="fw-bold">Phone</div>
+                          <p>(509)-733-1795</p>
                       </div>
                       
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                       <div class="ms-2 me-auto">
-                        <div class="fw-bold">Email</div>
+                        <div id="liheader" class="fw-bold">Email</div>
                         jordihernandez133@gmail.com
                       </div>
                       
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold">More Links!</div>
+                      <div id="canvBtn" class="ms-2 me-auto">
+                        <div id="liheader" class="fw-bold">More Links!</div>
                         <button class="btn btn-primary" id="canvasBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Click Me!</button>
                       <div class="" style="width: d-block w-100;">
                       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
-                          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <h5 id="offcanvasRightLabel">Explore!</h5>
                           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                      
-                            <a href="img/Web-Dev-resume.png" download>Resume<span></span></a>
-                      
-                      
-                            <a href="https://github.com/hernajor133">GitHub<span></span></a>
+
+                          <ul class="offul">
+                            <li class="offli"><a class="offa" href="img/Web-Dev-resume.png" download>Resume<span></span></a></li>
+                            <li class="offli"><a class="offa" href="https://github.com/hernajor133">GitHub<span></span></a></li>
+                            <li class="offli"><a class="offa" href="https://www.linkedin.com/in/jordi-hernandez-b731b7223/">LinkedIn<span></span></a></li>
+                          </ul>
                       
                         </div>
                       </div>

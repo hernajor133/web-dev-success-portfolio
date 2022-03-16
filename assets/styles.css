@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-
+    
 }
 
 
@@ -36,9 +36,7 @@ header {
     background: #000000;
 }
 
-li {
-    list-style: none;
-}
+
 
 button{
     color: white;
@@ -50,6 +48,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     padding: 0 24px;
 }
 
@@ -61,6 +60,7 @@ button{
 }
 
 .nav-branding{
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: white;
 }
@@ -69,14 +69,15 @@ button{
     transition: 0.7s ease;
     border:none;
     background-color: transparent;
-    font-weight: bold;
-    color: rgb(255, 255, 255)
-    
-    
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+
 }
 
 .nav-link:hover{
-    color: white
+    color: gray
 }
 
 .hamburger{
@@ -130,6 +131,15 @@ button{
     .nav-menu.active{
         left: 0;
     }
+
+    .navbar{
+        min-height:70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
 }
 
 .img-container {
@@ -140,9 +150,20 @@ button{
 
 
 .card-title {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
     background-color: black;
     color: white;
     width: 100%;
+    
+}
+
+.card-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    
 }
 
 .card-body {
@@ -157,13 +178,17 @@ button{
 }
 
 #project{
+    font-family: 'Roboto', sans-serif;
     background-color: black;
     color: white;
+    font-weight: bold;
 }
 
 #contact{
+    font-family: 'Roboto', sans-serif;
     background-color: black;
     color: white;
+    font-weight: bold;
 }
 
 .containerTwo{
@@ -196,6 +221,9 @@ button{
 form{
     width: 90%;
     max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
 }
 
 .input-group{
@@ -226,17 +254,26 @@ label{
 .cardBtn{
     padding: 10px 0;
     color: #fff;
-    background: black;
+    background: gray;
     width: 100%;
     cursor: pointer;
 }
 
 #canvasBtn{
     padding: 10px 0;
+
     color: #fff;
-    background: black;
-    width: 15em;
+    background: gray;
+    width: 10em;
     cursor: pointer;
+    
+    
+}
+
+#canvBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input:focus~label,
@@ -258,10 +295,15 @@ textarea:valid~label{
 }
 
 .h1{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2em;
+    padding-top: 1em;
+
+    background-color: black;
+    color: white;
+    
 }
 
 #labelBox{
@@ -283,11 +325,81 @@ textarea:valid~label{
 }
 
 .textDiv{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+
+.card{
+    padding: 30px;
+}
+
+.btn{
+
+    background: gray;
+    color: white;
+}
+
+.btnCard{
+    display: flex;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.offcanvas-header {
+    background: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#offcanvasRightLabel{
+    font-size: 35px;
+}
+
+.offul{
+    padding: 0;
+    margin: 0;
+}
+
+.offul .offli{
+    list-style-type: none;
+    font-size: 25px;
+    margin: 30px;
+    background-color: gray;
+    
+}
+
+.offul .offli .offa{
+    text-decoration: none;
+    padding: 15px 35px;
+    display: block;
+}
+
+.offa{
+    color: white
+}
+
+#liheader {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    width: 239px
+}
+
+
 
 
 
