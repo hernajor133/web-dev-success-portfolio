@@ -168,10 +168,28 @@ button{
 
 .containerTwo{
     width: 100%;
-    height: 100vh;
+    padding: 100px;
+    height: 90vh;
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media(max-width:1024px){
+    .containerTwo{
+    width: 100%;
+    padding: 0;
+    height: 90vh;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    }
+
+    
+        
+
+    
 }
 
 
@@ -213,6 +231,14 @@ label{
     cursor: pointer;
 }
 
+#canvasBtn{
+    padding: 10px 0;
+    color: #fff;
+    background: black;
+    width: 15em;
+    cursor: pointer;
+}
+
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
@@ -230,4 +256,39 @@ textarea:valid~label{
 .row .input-group{
     flex-basis: 48%;
 }
+
+.h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+#labelBox{
+    padding-left: 22px;
+}
+
+.cardDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.textDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
 

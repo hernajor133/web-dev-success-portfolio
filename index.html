@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    
     <link rel="stylesheet" href="./assets/styles.css" />
     <script src="https://kit.fontawesome.com/547e61be52.js" crossorigin="anonymous"></script>
     <title>WebDev Success Portfolio</title>
@@ -29,7 +29,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <button id="contactBtn" class="nav-link" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Contact Me!</button>
+            <a href="#inner-carousel">
+              <button id="contactBtn" class="nav-link" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Contact Me!</button>
+            </a>
           </li>
         </ul>
         <div class="hamburger">
@@ -45,7 +47,7 @@
       <!-- info about Jordi -->
       <div class="img-container">
         <div class="">
-          <div class="card mb-3" style="">
+          <div class="card mb-3" >
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="img/jordi-self2.png" class="img-fluid rounded-start" id="meImg" alt="...">
@@ -75,17 +77,15 @@
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-              <!-- staring carousel -->
-              <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <!-- inner carousel items -->
-                <div id="inner-carousel" class="carousel-inner">
+                <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="card" style="width: d-block w-100;">
+                    <div class="width: d-block w-100;">
                       <img src="img/deja-brew-2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 id="carousel2" class="card-title">DejaBrew</h5>
@@ -115,7 +115,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- end of carousel items -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -126,17 +125,6 @@
                 </button>
               </div>
 
-              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
-            <div class="" style="width: d-block w-100;">
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  ...
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -150,29 +138,83 @@
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
+              <div class="h1">
+                <h1>Get in Touch!</h1>
+              </div>
               <div class="containerTwo">
                 
-                <form>
-                  <div class="row">
+                <div class="cardDiv">
+                <div class="textDiv">
+                  <ol class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Phone</div>
+                        (509)-733-1795
+                      </div>
+                      
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Email</div>
+                        jordihernandez133@gmail.com
+                      </div>
+                      
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">More Links!</div>
+                        <button class="btn btn-primary" id="canvasBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Click Me!</button>
+                      <div class="" style="width: d-block w-100;">
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                      
+                            <a href="img/Web-Dev-resume.png" download>Resume<span></span></a>
+                      
+                      
+                            <a href="https://github.com/hernajor133">GitHub<span></span></a>
+                      
+                        </div>
+                      </div>
+                      </div>
+                      
+                    </li>
+                  </ol>
+                </div>
+                  
+
+                  
+                  
+                  
+                </div>
+                <div class="formDiv">
+                  <form >
+                    <div class="row">
+                      <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label id="labelBox" for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                      </div>
+                      <div class="input-group">
+                        <input type="text" id="number" required>
+                        <label id="labelBox" for="number"><i class="fa-solid fa-mobile-screen-button"></i> Phone</label>
+                      </div>
+                    </div> 
                     <div class="input-group">
-                      <input type="text" id="name" required>
-                      <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                      <input type="text" id="email" required>
+                      <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
                     </div>
                     <div class="input-group">
-                      <input type="text" id="number" required>
-                      <label for="number"><i class="fa-solid fa-mobile-screen-button"></i> Phone</label>
+                      <textarea id="message" rows="8" required></textarea>
+                      <label for="message"><i class="fa-solid fa-comment-dots"></i> Tell Me Something!</label>
                     </div>
-                  </div> 
-                  <div class="input-group">
-                    <input type="text" id="email" required>
-                    <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
-                  </div>
-                  <div class="input-group">
-                    <textarea id="message" rows="8" required></textarea>
-                    <label for="message"><i class="fa-solid fa-comment-dots"></i> Tell Me Something!</label>
-                  </div>
-                  <button class="cardBtn" type="submit"><i class="fa-solid fa-jet-fighter"></i> SUBMIT</button>
-                </form>
+                    <button class="cardBtn" type="submit"><i class="fa-solid fa-jet-fighter"></i> SUBMIT</button>
+                  </form>
+                </div>
+                
+                
               </div>
             </div>
           </div>
